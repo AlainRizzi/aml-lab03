@@ -172,3 +172,13 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# AML Lab 03: never commit datasets, checkpoints, or generated plots
+/data/*
+!/data/.gitkeep
+/checkpoints/*
+!/checkpoints/.gitkeep
+*.pt
+*.pth
+*.ckpt
+training_curves.png
+wandb/
